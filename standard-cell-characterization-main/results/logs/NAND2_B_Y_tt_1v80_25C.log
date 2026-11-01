@@ -1,0 +1,169 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * nand2 b->y @ tt_1v80_25c: the whole 4x4 grid in one deck
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vpwr                                       1.8
+vgnd                                         0
+side                                       1.8
+a0                                           0
+y0                                         1.8
+xdut0.na                               1.42269
+a1                                           0
+y1                                         1.8
+xdut1.na                               1.42269
+a2                                           0
+y2                                         1.8
+xdut2.na                               1.42269
+a3                                           0
+y3                                         1.8
+xdut3.na                               1.42269
+a4                                           0
+y4                                         1.8
+xdut4.na                               1.42269
+a5                                           0
+y5                                         1.8
+xdut5.na                               1.42269
+a6                                           0
+y6                                         1.8
+xdut6.na                               1.42269
+a7                                           0
+y7                                         1.8
+xdut7.na                               1.42269
+a8                                           0
+y8                                         1.8
+xdut8.na                               1.42269
+a9                                           0
+y9                                         1.8
+xdut9.na                               1.42269
+a10                                          0
+y10                                        1.8
+xdut10.na                              1.42269
+a11                                          0
+y11                                        1.8
+xdut11.na                              1.42269
+a12                                          0
+y12                                        1.8
+xdut12.na                              1.42269
+a13                                          0
+y13                                        1.8
+xdut13.na                              1.42269
+a14                                          0
+y14                                        1.8
+xdut14.na                              1.42269
+a15                                          0
+y15                                        1.8
+xdut15.na                              1.42269
+vin15#branch                                 0
+vin14#branch                                 0
+vin13#branch                                 0
+vin12#branch                                 0
+vin11#branch                                 0
+vin10#branch                                 0
+vin9#branch                                  0
+vin8#branch                                  0
+vin7#branch                                  0
+vin6#branch                                  0
+vin5#branch                                  0
+vin4#branch                                  0
+vin3#branch                                  0
+vin2#branch                                  0
+vin1#branch                                  0
+vin0#branch                                  0
+vside#branch                                 0
+vgnd#branch                        7.63619e-11
+vdd#branch                        -7.63637e-11
+
+ Reference value :  0.00000e+00 Reference value :  1.18925e-08
+No. of Data Rows : 4049
+itr0                =  2.00000e-11 targ=  2.02667e-09 trig=  2.00667e-09
+tphl0               =  2.14202e-11 targ=  2.03809e-09 trig=  2.01667e-09
+tplh0               =  3.38954e-11 targ=  1.00839e-08 trig=  1.00500e-08
+otf0                =  1.10504e-11 targ=  2.04438e-09 trig=  2.03333e-09
+otr0                =  2.52347e-11 targ=  1.00966e-08 trig=  1.00714e-08
+itr1                =  2.00000e-11 targ=  2.02667e-09 trig=  2.00667e-09
+tphl1               =  3.57118e-11 targ=  2.05238e-09 trig=  2.01667e-09
+tplh1               =  5.82176e-11 targ=  1.01082e-08 trig=  1.00500e-08
+otf1                =  2.87946e-11 targ=  2.06821e-09 trig=  2.03942e-09
+otr1                =  5.95175e-11 targ=  1.01404e-08 trig=  1.00808e-08
+itr2                =  2.00000e-11 targ=  2.02667e-09 trig=  2.00667e-09
+tphl2               =  7.28615e-11 targ=  2.08953e-09 trig=  2.01667e-09
+tplh2               =  1.20927e-10 targ=  1.01709e-08 trig=  1.00500e-08
+otf2                =  7.71362e-11 targ=  2.13115e-09 trig=  2.05401e-09
+otr2                =  1.50559e-10 targ=  1.02550e-08 trig=  1.01045e-08
+itr3                =  2.00000e-11 targ=  2.02667e-09 trig=  2.00667e-09
+tphl3               =  1.83808e-10 targ=  2.20047e-09 trig=  2.01667e-09
+tplh3               =  3.07140e-10 targ=  1.03571e-08 trig=  1.00500e-08
+otf3                =  2.22557e-10 targ=  2.31980e-09 trig=  2.09724e-09
+otr3                =  4.23400e-10 targ=  1.05974e-08 trig=  1.01740e-08
+itr4                =  6.00000e-11 targ=  2.08000e-09 trig=  2.02000e-09
+tphl4               =  3.05130e-11 targ=  2.08051e-09 trig=  2.05000e-09
+tplh4               =  5.06112e-11 targ=  1.02006e-08 trig=  1.01500e-08
+otf4                =  1.61670e-11 targ=  2.08897e-09 trig=  2.07280e-09
+otr4                =  2.91370e-11 targ=  1.02134e-08 trig=  1.01842e-08
+itr5                =  6.00000e-11 targ=  2.08000e-09 trig=  2.02000e-09
+tphl5               =  4.79315e-11 targ=  2.09793e-09 trig=  2.05000e-09
+tplh5               =  7.45562e-11 targ=  1.02246e-08 trig=  1.01500e-08
+otf5                =  3.12558e-11 targ=  2.11389e-09 trig=  2.08263e-09
+otr5                =  5.98271e-11 targ=  1.02567e-08 trig=  1.01968e-08
+itr6                =  6.00000e-11 targ=  2.08000e-09 trig=  2.02000e-09
+tphl6               =  8.55650e-11 targ=  2.13557e-09 trig=  2.05000e-09
+tplh6               =  1.37342e-10 targ=  1.02873e-08 trig=  1.01500e-08
+otf6                =  7.71645e-11 targ=  2.17715e-09 trig=  2.09999e-09
+otr6                =  1.50540e-10 targ=  1.03714e-08 trig=  1.02209e-08
+itr7                =  6.00000e-11 targ=  2.08000e-09 trig=  2.02000e-09
+tphl7               =  1.96676e-10 targ=  2.24668e-09 trig=  2.05000e-09
+tplh7               =  3.23823e-10 targ=  1.04738e-08 trig=  1.01500e-08
+otf7                =  2.22538e-10 targ=  2.36598e-09 trig=  2.14344e-09
+otr7                =  4.23391e-10 targ=  1.07141e-08 trig=  1.02907e-08
+itr8                =  2.00000e-10 targ=  2.26667e-09 trig=  2.06667e-09
+tphl8               =  4.31740e-11 targ=  2.20984e-09 trig=  2.16667e-09
+tplh8               =  9.13410e-11 targ=  1.05913e-08 trig=  1.05000e-08
+otf8                =  3.26960e-11 targ=  2.22650e-09 trig=  2.19381e-09
+otr8                =  5.60980e-11 targ=  1.06127e-08 trig=  1.05566e-08
+itr9                =  2.00000e-10 targ=  2.26667e-09 trig=  2.06667e-09
+tphl9               =  7.44280e-11 targ=  2.24109e-09 trig=  2.16667e-09
+tplh9               =  1.29581e-10 targ=  1.06296e-08 trig=  1.05000e-08
+otf9                =  5.17757e-11 targ=  2.26513e-09 trig=  2.21336e-09
+otr9                =  8.60126e-11 targ=  1.06668e-08 trig=  1.05808e-08
+itr10               =  2.00000e-10 targ=  2.26667e-09 trig=  2.06667e-09
+tphl10              =  1.25950e-10 targ=  2.29262e-09 trig=  2.16667e-09
+tplh10              =  1.96733e-10 targ=  1.06967e-08 trig=  1.05000e-08
+otf10               =  9.17824e-11 targ=  2.33671e-09 trig=  2.24492e-09
+otr10               =  1.58070e-10 targ=  1.07808e-08 trig=  1.06228e-08
+itr11               =  2.00000e-10 targ=  2.26667e-09 trig=  2.06667e-09
+tphl11              =  2.40611e-10 targ=  2.40728e-09 trig=  2.16667e-09
+tplh11              =  3.82721e-10 targ=  1.08827e-08 trig=  1.05000e-08
+otf11               =  2.24070e-10 targ=  2.52659e-09 trig=  2.30252e-09
+otr11               =  4.23396e-10 targ=  1.11230e-08 trig=  1.06996e-08
+itr12               =  6.00000e-10 targ=  2.80000e-09 trig=  2.20000e-09
+tphl12              =  4.44049e-11 targ=  2.54440e-09 trig=  2.50000e-09
+tplh12              =  1.56448e-10 targ=  1.16564e-08 trig=  1.15000e-08
+otf12               =  7.09944e-11 targ=  2.58046e-09 trig=  2.50946e-09
+otr12               =  1.03376e-10 targ=  1.16949e-08 trig=  1.15915e-08
+itr13               =  6.00000e-10 targ=  2.80000e-09 trig=  2.20000e-09
+tphl13              =  1.02215e-10 targ=  2.60222e-09 trig=  2.50000e-09
+tplh13              =  2.23766e-10 targ=  1.17238e-08 trig=  1.15000e-08
+otf13               =  9.95549e-11 targ=  2.64717e-09 trig=  2.54762e-09
+otr13               =  1.59818e-10 targ=  1.17900e-08 trig=  1.16302e-08
+itr14               =  6.00000e-10 targ=  2.80000e-09 trig=  2.20000e-09
+tphl14              =  1.92789e-10 targ=  2.69279e-09 trig=  2.50000e-09
+tplh14              =  3.41531e-10 targ=  1.18415e-08 trig=  1.15000e-08
+otf14               =  1.52620e-10 targ=  2.75985e-09 trig=  2.60723e-09
+otr14               =  2.45925e-10 targ=  1.19500e-08 trig=  1.17040e-08
+itr15               =  6.00000e-10 targ=  2.80000e-09 trig=  2.20000e-09
+tphl15              =  3.53972e-10 targ=  2.85397e-09 trig=  2.50000e-09
+tplh15              =  5.54417e-10 targ=  1.20544e-08 trig=  1.15000e-08
+otf15               =  2.72735e-10 targ=  2.98230e-09 trig=  2.70956e-09
+otr15               =  4.53353e-10 targ=  1.22947e-08 trig=  1.18414e-08
+Note: Simulation executed from .control section 

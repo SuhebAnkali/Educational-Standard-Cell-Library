@@ -1,0 +1,364 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * dff hold sweep @ tt_1v80_25c
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vpwr                                       1.8
+vgnd                                         0
+clk                                          0
+d0                                           0
+xdut0.ckb                                  1.8
+xdut0.ck                           6.14204e-08
+xdut0.m                            8.87222e-09
+xdut0.mb                                   1.8
+xdut0.fb1                          1.08059e-06
+xdut0.s                            1.13898e-06
+xdut0.sb                                   1.8
+xdut0.fb2                          1.10871e-06
+xdut0.qn                           6.14204e-08
+q0                                         1.8
+d1                                           0
+xdut1.ckb                                  1.8
+xdut1.ck                           6.14204e-08
+xdut1.m                            8.87222e-09
+xdut1.mb                                   1.8
+xdut1.fb1                          1.08059e-06
+xdut1.s                            1.13898e-06
+xdut1.sb                                   1.8
+xdut1.fb2                          1.10871e-06
+xdut1.qn                           6.14204e-08
+q1                                         1.8
+d2                                           0
+xdut2.ckb                                  1.8
+xdut2.ck                           6.14204e-08
+xdut2.m                            8.87222e-09
+xdut2.mb                                   1.8
+xdut2.fb1                          1.08059e-06
+xdut2.s                            1.13898e-06
+xdut2.sb                                   1.8
+xdut2.fb2                          1.10871e-06
+xdut2.qn                           6.14204e-08
+q2                                         1.8
+d3                                           0
+xdut3.ckb                                  1.8
+xdut3.ck                           6.14204e-08
+xdut3.m                            8.87222e-09
+xdut3.mb                                   1.8
+xdut3.fb1                          1.08059e-06
+xdut3.s                            1.13898e-06
+xdut3.sb                                   1.8
+xdut3.fb2                          1.10871e-06
+xdut3.qn                           6.14204e-08
+q3                                         1.8
+d4                                           0
+xdut4.ckb                                  1.8
+xdut4.ck                           6.14204e-08
+xdut4.m                            8.87222e-09
+xdut4.mb                                   1.8
+xdut4.fb1                          1.08059e-06
+xdut4.s                            1.13898e-06
+xdut4.sb                                   1.8
+xdut4.fb2                          1.10871e-06
+xdut4.qn                           6.14204e-08
+q4                                         1.8
+d5                                           0
+xdut5.ckb                                  1.8
+xdut5.ck                           6.14204e-08
+xdut5.m                            8.87222e-09
+xdut5.mb                                   1.8
+xdut5.fb1                          1.08059e-06
+xdut5.s                            1.13898e-06
+xdut5.sb                                   1.8
+xdut5.fb2                          1.10871e-06
+xdut5.qn                           6.14204e-08
+q5                                         1.8
+d6                                           0
+xdut6.ckb                                  1.8
+xdut6.ck                           6.14204e-08
+xdut6.m                            8.87222e-09
+xdut6.mb                                   1.8
+xdut6.fb1                          1.08059e-06
+xdut6.s                            1.13898e-06
+xdut6.sb                                   1.8
+xdut6.fb2                          1.10871e-06
+xdut6.qn                           6.14204e-08
+q6                                         1.8
+d7                                           0
+xdut7.ckb                                  1.8
+xdut7.ck                           6.14204e-08
+xdut7.m                            8.87222e-09
+xdut7.mb                                   1.8
+xdut7.fb1                          1.08059e-06
+xdut7.s                            1.13898e-06
+xdut7.sb                                   1.8
+xdut7.fb2                          1.10871e-06
+xdut7.qn                           6.14204e-08
+q7                                         1.8
+d8                                           0
+xdut8.ckb                                  1.8
+xdut8.ck                           6.14204e-08
+xdut8.m                            8.87222e-09
+xdut8.mb                                   1.8
+xdut8.fb1                          1.08059e-06
+xdut8.s                            1.13898e-06
+xdut8.sb                                   1.8
+xdut8.fb2                          1.10871e-06
+xdut8.qn                           6.14204e-08
+q8                                         1.8
+d9                                           0
+xdut9.ckb                                  1.8
+xdut9.ck                           6.14204e-08
+xdut9.m                            8.87222e-09
+xdut9.mb                                   1.8
+xdut9.fb1                          1.08059e-06
+xdut9.s                            1.13898e-06
+xdut9.sb                                   1.8
+xdut9.fb2                          1.10871e-06
+xdut9.qn                           6.14204e-08
+q9                                         1.8
+d10                                          0
+xdut10.ckb                                 1.8
+xdut10.ck                          6.14204e-08
+xdut10.m                           8.87222e-09
+xdut10.mb                                  1.8
+xdut10.fb1                         1.08059e-06
+xdut10.s                           1.13898e-06
+xdut10.sb                                  1.8
+xdut10.fb2                         1.10871e-06
+xdut10.qn                          6.14204e-08
+q10                                        1.8
+d11                                          0
+xdut11.ckb                                 1.8
+xdut11.ck                          6.14204e-08
+xdut11.m                           8.87222e-09
+xdut11.mb                                  1.8
+xdut11.fb1                         1.08059e-06
+xdut11.s                           1.13898e-06
+xdut11.sb                                  1.8
+xdut11.fb2                         1.10871e-06
+xdut11.qn                          6.14204e-08
+q11                                        1.8
+d12                                          0
+xdut12.ckb                                 1.8
+xdut12.ck                          6.14204e-08
+xdut12.m                           8.87222e-09
+xdut12.mb                                  1.8
+xdut12.fb1                         1.08059e-06
+xdut12.s                           1.13898e-06
+xdut12.sb                                  1.8
+xdut12.fb2                         1.10871e-06
+xdut12.qn                          6.14204e-08
+q12                                        1.8
+d13                                          0
+xdut13.ckb                                 1.8
+xdut13.ck                          6.14204e-08
+xdut13.m                           8.87222e-09
+xdut13.mb                                  1.8
+xdut13.fb1                         1.08059e-06
+xdut13.s                           1.13898e-06
+xdut13.sb                                  1.8
+xdut13.fb2                         1.10871e-06
+xdut13.qn                          6.14204e-08
+q13                                        1.8
+d14                                          0
+xdut14.ckb                                 1.8
+xdut14.ck                          6.14204e-08
+xdut14.m                           8.87222e-09
+xdut14.mb                                  1.8
+xdut14.fb1                         1.08059e-06
+xdut14.s                           1.13898e-06
+xdut14.sb                                  1.8
+xdut14.fb2                         1.10871e-06
+xdut14.qn                          6.14204e-08
+q14                                        1.8
+d15                                          0
+xdut15.ckb                                 1.8
+xdut15.ck                          6.14204e-08
+xdut15.m                           8.87222e-09
+xdut15.mb                                  1.8
+xdut15.fb1                         1.08059e-06
+xdut15.s                           1.13898e-06
+xdut15.sb                                  1.8
+xdut15.fb2                         1.10871e-06
+xdut15.qn                          6.14204e-08
+q15                                        1.8
+d16                                          0
+xdut16.ckb                                 1.8
+xdut16.ck                          6.14204e-08
+xdut16.m                           8.87222e-09
+xdut16.mb                                  1.8
+xdut16.fb1                         1.08059e-06
+xdut16.s                           1.13898e-06
+xdut16.sb                                  1.8
+xdut16.fb2                         1.10871e-06
+xdut16.qn                          6.14204e-08
+q16                                        1.8
+d17                                          0
+xdut17.ckb                                 1.8
+xdut17.ck                          6.14204e-08
+xdut17.m                           8.87222e-09
+xdut17.mb                                  1.8
+xdut17.fb1                         1.08059e-06
+xdut17.s                           1.13898e-06
+xdut17.sb                                  1.8
+xdut17.fb2                         1.10871e-06
+xdut17.qn                          6.14204e-08
+q17                                        1.8
+d18                                          0
+xdut18.ckb                                 1.8
+xdut18.ck                          6.14204e-08
+xdut18.m                           8.87222e-09
+xdut18.mb                                  1.8
+xdut18.fb1                         1.08059e-06
+xdut18.s                           1.13898e-06
+xdut18.sb                                  1.8
+xdut18.fb2                         1.10871e-06
+xdut18.qn                          6.14204e-08
+q18                                        1.8
+d19                                          0
+xdut19.ckb                                 1.8
+xdut19.ck                          6.14204e-08
+xdut19.m                           8.87222e-09
+xdut19.mb                                  1.8
+xdut19.fb1                         1.08059e-06
+xdut19.s                           1.13898e-06
+xdut19.sb                                  1.8
+xdut19.fb2                         1.10871e-06
+xdut19.qn                          6.14204e-08
+q19                                        1.8
+d20                                          0
+xdut20.ckb                                 1.8
+xdut20.ck                          6.14204e-08
+xdut20.m                           8.87222e-09
+xdut20.mb                                  1.8
+xdut20.fb1                         1.08059e-06
+xdut20.s                           1.13898e-06
+xdut20.sb                                  1.8
+xdut20.fb2                         1.10871e-06
+xdut20.qn                          6.14204e-08
+q20                                        1.8
+vd20#branch                        6.58066e-12
+vd19#branch                        6.58066e-12
+vd18#branch                        6.58066e-12
+vd17#branch                        6.58066e-12
+vd16#branch                        6.58066e-12
+vd15#branch                        6.58066e-12
+vd14#branch                        6.58066e-12
+vd13#branch                        6.58066e-12
+vd12#branch                        6.58066e-12
+vd11#branch                        6.58066e-12
+vd10#branch                        6.58066e-12
+vd9#branch                         6.58066e-12
+vd8#branch                         6.58066e-12
+vd7#branch                         6.58066e-12
+vd6#branch                         6.58066e-12
+vd5#branch                         6.58066e-12
+vd4#branch                         6.58066e-12
+vd3#branch                         6.58066e-12
+vd2#branch                         6.58066e-12
+vd1#branch                         6.58066e-12
+vd0#branch                         6.58066e-12
+vclk#branch                                  0
+vgnd#branch                        2.74575e-08
+vdd#branch                        -2.75958e-08
+
+ Reference value :  0.00000e+00 Reference value :  1.35140e-09 Reference value :  2.72640e-09 Reference value :  4.14140e-09 Reference value :  5.39250e-09 Reference value :  6.60250e-09 Reference value :  8.01750e-09 Reference value :  9.31750e-09 Reference value :  1.05975e-08 Reference value :  1.19925e-08 Reference value :  1.29925e-08 Reference value :  1.43475e-08 Reference value :  1.57575e-08 Reference value :  1.71725e-08 Reference value :  1.85825e-08 Reference value :  1.99527e-08 Reference value :  2.01493e-08 Reference value :  2.11093e-08 Reference value :  2.20743e-08 Reference value :  2.30393e-08 Reference value :  2.40093e-08 Reference value :  2.50575e-08 Reference value :  2.62175e-08 Reference value :  2.73675e-08 Reference value :  2.85225e-08 Reference value :  2.98675e-08 Reference value :  3.12725e-08
+No. of Data Rows : 6618
+
+Error: measure  tcq0  trig(TARG) : out of interval
+ meas tran tcq0 trig v(clk) val=0.9 rise=1 td=12n targ v(q0) val=0.9 rise=1 td=12n failed!
+
+qf0                 =  2.10269e-07
+
+Error: measure  tcq1  trig(TARG) : out of interval
+ meas tran tcq1 trig v(clk) val=0.9 rise=1 td=12n targ v(q1) val=0.9 rise=1 td=12n failed!
+
+qf1                 =  2.10269e-07
+
+Error: measure  tcq2  trig(TARG) : out of interval
+ meas tran tcq2 trig v(clk) val=0.9 rise=1 td=12n targ v(q2) val=0.9 rise=1 td=12n failed!
+
+qf2                 =  2.10269e-07
+
+Error: measure  tcq3  trig(TARG) : out of interval
+ meas tran tcq3 trig v(clk) val=0.9 rise=1 td=12n targ v(q3) val=0.9 rise=1 td=12n failed!
+
+qf3                 =  2.10269e-07
+
+Error: measure  tcq4  trig(TARG) : out of interval
+ meas tran tcq4 trig v(clk) val=0.9 rise=1 td=12n targ v(q4) val=0.9 rise=1 td=12n failed!
+
+qf4                 =  2.10269e-07
+
+Error: measure  tcq5  trig(TARG) : out of interval
+ meas tran tcq5 trig v(clk) val=0.9 rise=1 td=12n targ v(q5) val=0.9 rise=1 td=12n failed!
+
+qf5                 =  2.10269e-07
+
+Error: measure  tcq6  trig(TARG) : out of interval
+ meas tran tcq6 trig v(clk) val=0.9 rise=1 td=12n targ v(q6) val=0.9 rise=1 td=12n failed!
+
+qf6                 =  2.10269e-07
+
+Error: measure  tcq7  trig(TARG) : out of interval
+ meas tran tcq7 trig v(clk) val=0.9 rise=1 td=12n targ v(q7) val=0.9 rise=1 td=12n failed!
+
+qf7                 =  2.10269e-07
+
+Error: measure  tcq8  trig(TARG) : out of interval
+ meas tran tcq8 trig v(clk) val=0.9 rise=1 td=12n targ v(q8) val=0.9 rise=1 td=12n failed!
+
+qf8                 =  2.10269e-07
+
+Error: measure  tcq9  trig(TARG) : out of interval
+ meas tran tcq9 trig v(clk) val=0.9 rise=1 td=12n targ v(q9) val=0.9 rise=1 td=12n failed!
+
+qf9                 =  2.10269e-07
+
+Error: measure  tcq10  trig(TARG) : out of interval
+ meas tran tcq10 trig v(clk) val=0.9 rise=1 td=12n targ v(q10) val=0.9 rise=1 td=12n failed!
+
+qf10                =  2.10269e-07
+
+Error: measure  tcq11  trig(TARG) : out of interval
+ meas tran tcq11 trig v(clk) val=0.9 rise=1 td=12n targ v(q11) val=0.9 rise=1 td=12n failed!
+
+qf11                =  2.10269e-07
+
+Error: measure  tcq12  trig(TARG) : out of interval
+ meas tran tcq12 trig v(clk) val=0.9 rise=1 td=12n targ v(q12) val=0.9 rise=1 td=12n failed!
+
+qf12                =  2.10269e-07
+
+Error: measure  tcq13  trig(TARG) : out of interval
+ meas tran tcq13 trig v(clk) val=0.9 rise=1 td=12n targ v(q13) val=0.9 rise=1 td=12n failed!
+
+qf13                =  2.10269e-07
+
+Error: measure  tcq14  trig(TARG) : out of interval
+ meas tran tcq14 trig v(clk) val=0.9 rise=1 td=12n targ v(q14) val=0.9 rise=1 td=12n failed!
+
+qf14                =  2.10269e-07
+tcq15               =  2.20802e-10 targ=  2.02708e-08 trig=  2.00500e-08
+qf15                =  1.80000e+00
+tcq16               =  2.02536e-10 targ=  2.02525e-08 trig=  2.00500e-08
+qf16                =  1.80000e+00
+tcq17               =  1.96233e-10 targ=  2.02462e-08 trig=  2.00500e-08
+qf17                =  1.80000e+00
+tcq18               =  1.92967e-10 targ=  2.02430e-08 trig=  2.00500e-08
+qf18                =  1.80000e+00
+tcq19               =  1.91329e-10 targ=  2.02413e-08 trig=  2.00500e-08
+qf19                =  1.80000e+00
+tcq20               =  1.90418e-10 targ=  2.02404e-08 trig=  2.00500e-08
+qf20                =  1.80000e+00
+Note: Simulation executed from .control section 

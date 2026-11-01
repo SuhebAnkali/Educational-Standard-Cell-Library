@@ -1,0 +1,32 @@
+* Combinational-arc characterization deck.
+* __CELL__ __ARC__ __SLEW__ __CL__ __CORNER__ __VDD__ __TEMP__ are substituted.
+.lib pdk/libs.tech/ngspice/sky130.lib.spice __CORNER__
+.include cells.spice
+
+.param VDD=__VDD__
+.param TRF=__TRF__
+.param CL=__CL__
+.temp __TEMP__
+
+Vdd  VPWR 0 {VDD}
+Vgnd VGND 0 0
+* the switching input
+Vin  A 0 PULSE(0 {VDD} 2n {TRF} {TRF} 8n 20n)
+* the side input, held at its non-controlling level
+Vside B 0 __SIDE__
+__DUT__
+CLOAD Y 0 {CL}
+
+.tran 2p 20n
+
+.control
+set filetype=ascii
+run
+meas tran in_tr  trig v(A) val=__V20__ rise=1 targ v(A) val=__V80__ rise=1
+meas tran in_tf  trig v(A) val=__V80__ fall=1 targ v(A) val=__V20__ fall=1
+meas tran tphl trig v(A) val=__V50__ rise=1 targ v(Y) val=__V50__ fall=1
+meas tran tplh trig v(A) val=__V50__ fall=1 targ v(Y) val=__V50__ rise=1
+meas tran tf   trig v(Y) val=__V80__ fall=1 targ v(Y) val=__V20__ fall=1
+meas tran tr   trig v(Y) val=__V20__ rise=1 targ v(Y) val=__V80__ rise=1
+.endc
+.end

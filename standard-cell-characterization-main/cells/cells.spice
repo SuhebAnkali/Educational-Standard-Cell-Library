@@ -1,0 +1,66 @@
+* -----------------------------------------------------------------------------
+* Cell library under characterization - sky130 primitives, 1.8 V devices.
+*
+* Sizing follows the usual logical-effort reasoning rather than being copied:
+*   INV     WN,      WP = 2*WN          (2:1 for roughly balanced edges)
+*   NAND2   WN = 2x  (two NMOS in series), WP = 2*WN_inv (PMOS in parallel)
+*   NOR2    WN = 1x  (NMOS in parallel),   WP = 4*WN_inv (two PMOS in series)
+* so all three present a comparable drive strength to the same load.
+* -----------------------------------------------------------------------------
+
+.subckt inv A Y VPWR VGND wn=0.65 wp=1.30 l=0.15
+XMN Y A VGND VGND sky130_fd_pr__nfet_01v8 W={wn} L={l}
+XMP Y A VPWR VPWR sky130_fd_pr__pfet_01v8 W={wp} L={l}
+.ends inv
+
+* Y = !(A & B).  NMOS in series -> each doubled; PMOS in parallel -> unchanged.
+.subckt nand2 A B Y VPWR VGND wn=1.30 wp=1.30 l=0.15
+XMN1 Y  A na VGND sky130_fd_pr__nfet_01v8 W={wn} L={l}
+XMN2 na B VGND VGND sky130_fd_pr__nfet_01v8 W={wn} L={l}
+XMP1 Y  A VPWR VPWR sky130_fd_pr__pfet_01v8 W={wp} L={l}
+XMP2 Y  B VPWR VPWR sky130_fd_pr__pfet_01v8 W={wp} L={l}
+.ends nand2
+
+* Y = !(A | B).  PMOS in series -> each doubled; NMOS in parallel -> unchanged.
+.subckt nor2 A B Y VPWR VGND wn=0.65 wp=2.60 l=0.15
+XMN1 Y A VGND VGND sky130_fd_pr__nfet_01v8 W={wn} L={l}
+XMN2 Y B VGND VGND sky130_fd_pr__nfet_01v8 W={wn} L={l}
+XMP1 pa A VPWR VPWR sky130_fd_pr__pfet_01v8 W={wp} L={l}
+XMP2 Y  B pa   VPWR sky130_fd_pr__pfet_01v8 W={wp} L={l}
+.ends nor2
+
+* Transmission gate: pass when g=1 / gb=0.
+.subckt tgate IN OUT G GB VPWR VGND w=0.42 l=0.15
+XMN OUT G  IN VGND sky130_fd_pr__nfet_01v8 W={w} L={l}
+XMP OUT GB IN VPWR sky130_fd_pr__pfet_01v8 W={w} L={l}
+.ends tgate
+
+* -----------------------------------------------------------------------------
+* Positive-edge-triggered master-slave D flip-flop, transmission-gate style.
+*
+*   CLK=0 : master transparent (D -> m), slave holds
+*   CLK=1 : master holds via its tristate feedback, slave transparent
+*
+* The feedback paths are gated by their own transmission gates rather than made
+* deliberately weak, so there is never a drive fight to size around.
+* -----------------------------------------------------------------------------
+.subckt dff D CLK Q VPWR VGND
+XIC1 CLK CKB VPWR VGND inv wn=0.65 wp=1.30
+XIC2 CKB CK  VPWR VGND inv wn=0.65 wp=1.30
+
+* master latch : transparent while CK = 0
+XTG1 D   m   CKB CK  VPWR VGND tgate
+XI1  m   mb  VPWR VGND inv wn=0.42 wp=0.84
+XI2  mb  fb1 VPWR VGND inv wn=0.42 wp=0.84
+XTG2 fb1 m   CK  CKB VPWR VGND tgate
+
+* slave latch : transparent while CK = 1
+XTG3 mb  s   CK  CKB VPWR VGND tgate
+XI3  s   sb  VPWR VGND inv wn=0.42 wp=0.84
+XI4  sb  fb2 VPWR VGND inv wn=0.42 wp=0.84
+XTG4 fb2 s   CKB CK  VPWR VGND tgate
+
+* output buffer
+XI5  sb  qn  VPWR VGND inv wn=0.65 wp=1.30
+XI6  qn  Q   VPWR VGND inv wn=1.30 wp=2.60
+.ends dff

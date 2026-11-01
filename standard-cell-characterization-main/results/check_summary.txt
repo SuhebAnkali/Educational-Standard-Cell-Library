@@ -1,0 +1,23 @@
+[PASS] grid completeness: 240 combinational rows  -- got 240
+[PASS] grid completeness: 48 DFF rows  -- got 48
+[PASS] measured input transition within 10% of target  -- worst deviation 0.0%
+[PASS] delay increases monotonically with load  -- 72 series checked
+[PASS] NAND2: A->Y and B->Y arcs are distinguishable  -- max difference 67.9% of cell_fall
+[PASS] NOR2: A->Y and B->Y arcs are distinguishable  -- max difference 129.2% of cell_fall
+[PASS] DFF setup characterized at ff_1v98_m40C  -- 12.5 ps, bounded=yes
+[PASS] DFF hold characterized at ff_1v98_m40C  -- -12.5 ps, bounded=yes
+[PASS] DFF setup characterized at ss_1v62_125C  -- 25.0 ps, bounded=yes
+[PASS] DFF hold characterized at ss_1v62_125C  -- 0.0 ps, bounded=yes
+[PASS] DFF setup characterized at tt_1v80_25C  -- 15.0 ps, bounded=yes
+[PASS] DFF hold characterized at tt_1v80_25C  -- -10.0 ps, bounded=yes
+[PASS] inverter noise margins positive at tt_1v80_25C  -- NMH=0.784 NML=0.667 butterflySNM=0.651
+[PASS] inverter noise margins positive at ff_1v98_m40C  -- NMH=0.912 NML=0.607 butterflySNM=0.753
+[PASS] inverter noise margins positive at ss_1v62_125C  -- NMH=0.612 NML=0.702 butterflySNM=0.593
+[PASS] sky130_char_ff_1v98_m40C.lib: braces balanced  -- delta 0
+[PASS] sky130_char_ff_1v98_m40C.lib: 24 tables have 4 rows x 4 columns  -- rows_ok=True cols_ok=True
+[PASS] sky130_char_ss_1v62_125C.lib: braces balanced  -- delta 0
+[PASS] sky130_char_ss_1v62_125C.lib: 24 tables have 4 rows x 4 columns  -- rows_ok=True cols_ok=True
+[PASS] sky130_char_tt_1v80_25C.lib: braces balanced  -- delta 0
+[PASS] sky130_char_tt_1v80_25C.lib: 24 tables have 4 rows x 4 columns  -- rows_ok=True cols_ok=True
+
+21/21 checks passed

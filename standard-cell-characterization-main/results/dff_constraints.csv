@@ -1,0 +1,7 @@
+pvt,kind,value_ps,bounded,reference_tcq_ps,criterion,slew_ps,cload_fF
+tt_1v80_25C,setup,15,yes,186.047,10% clk->Q degradation,60,8
+tt_1v80_25C,hold,-10,yes,186.046,10% clk->Q degradation,60,8
+ff_1v98_m40C,setup,12.5,yes,114.555,10% clk->Q degradation,60,8
+ff_1v98_m40C,hold,-12.5,yes,114.556,10% clk->Q degradation,60,8
+ss_1v62_125C,setup,25,yes,334.605,10% clk->Q degradation,60,8
+ss_1v62_125C,hold,0,yes,334.622,10% clk->Q degradation,60,8

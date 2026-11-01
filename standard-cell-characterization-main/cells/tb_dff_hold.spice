@@ -1,0 +1,26 @@
+* DFF HOLD characterization.
+* Edge 1 @ 5 ns captures D=0 and initialises Q low. D rises well before the
+* capturing edge at 20 ns and falls again at TD, so the hold separation under
+* test is TD - 20ns. If D is pulled away too soon the capture fails and Q never
+* rises - which is exactly what the search looks for.
+.lib pdk/libs.tech/ngspice/sky130.lib.spice __CORNER__
+.include cells.spice
+.param VDD=__VDD__
+.param TRF=__TRF__
+.param CL=__CL__
+.param TD=__TD__
+.temp __TEMP__
+Vdd  VPWR 0 {VDD}
+Vgnd VGND 0 0
+Vclk CLK 0 PULSE(0 {VDD} 5n {TRF} {TRF} 4n 15n)
+Vd   D   0 PWL(0 0  12n 0  {12n+TRF} {VDD}  {TD} {VDD}  {TD+TRF} 0  34n 0)
+XDUT D CLK Q VPWR VGND dff
+CLOAD Q 0 {CL}
+.tran 2p 32n
+.control
+set filetype=ascii
+run
+meas tran tcq trig v(CLK) val=__V50__ rise=1 td=12n targ v(Q) val=__V50__ rise=1 td=12n
+meas tran qfinal find v(Q) at=28n
+.endc
+.end

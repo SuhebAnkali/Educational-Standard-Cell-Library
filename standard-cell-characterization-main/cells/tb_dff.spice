@@ -1,0 +1,35 @@
+* DFF clock-to-Q characterization.
+*
+* THREE rising clock edges, not two. The operating point leaves the slave latch
+* in an arbitrary state, so the first edge is an INITIALISER: it captures D=0 and
+* forces Q low. Without it Q can already be high when the "rising" edge arrives
+* and that measurement silently returns nothing.
+*   edge 1 @  5 ns : D=0  -> Q = 0   (initialise)
+*   edge 2 @ 15 ns : D=1  -> Q rises (measured)
+*   edge 3 @ 25 ns : D=0  -> Q falls (measured)
+.lib pdk/libs.tech/ngspice/sky130.lib.spice __CORNER__
+.include cells.spice
+
+.param VDD=__VDD__
+.param TRF=__TRF__
+.param CL=__CL__
+.temp __TEMP__
+
+Vdd  VPWR 0 {VDD}
+Vgnd VGND 0 0
+Vclk CLK 0 PULSE(0 {VDD} 5n {TRF} {TRF} 4n 10n)
+Vd   D   0 PWL(0 0  12n 0  {12n+TRF} {VDD}  22n {VDD}  {22n+TRF} 0)
+XDUT D CLK Q VPWR VGND dff
+CLOAD Q 0 {CL}
+
+.tran 2p 34n
+
+.control
+set filetype=ascii
+run
+meas tran tcq_r trig v(CLK) val=__V50__ rise=1 td=12n targ v(Q) val=__V50__ rise=1 td=12n
+meas tran tcq_f trig v(CLK) val=__V50__ rise=1 td=22n targ v(Q) val=__V50__ fall=1 td=22n
+meas tran q_tr  trig v(Q) val=__V20__ rise=1 td=12n targ v(Q) val=__V80__ rise=1 td=12n
+meas tran q_tf  trig v(Q) val=__V80__ fall=1 td=22n targ v(Q) val=__V20__ fall=1 td=22n
+.endc
+.end
